@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(38, 37, 37);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+}
+.texto1 p{
+    color: gray;
+    text-align: center;
+}
+.texto1 h1{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+.logo img{
+    width: 200px;
+}
+.button-container{
+    display: flex;
+    gap: 18px;
+    padding: 8px;
+}
+.button2{
+    background-color: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:  rgb(243, 187, 84) 0.3s ease;
+}
+.button2:hover {
+    background-color: rgb(243, 187, 84);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 6px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.intro-text{
+    text-align: center;
+    padding: 50px;
+}
+.textocurso h1{
+    font-size: 40px;
+
+}
+.textocurso{
+   text-align: center;
+   padding: 20px;
+}
+
+section{
+    width: 214vh;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    width: 400px;
+    height: 450px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-container{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.texto-maior {
+    font-size: 2em;
+    font-weight: bold;
+}
+.card:hover {
+    height: 600px;
+    padding: 10px;
+    overflow: hidden;
+}
+.card .img-box {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 0px;
+    margin-top: 5px;
+}
+.card:hover .img-box {
+    top: -100;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.card .img-box img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.card .content {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transform: translateY(30px);
+    overflow-y: visible;
+    transition: 0.5s;
+    align-items: center;
+    display: grid;
+    padding: 10px;
+}
+
+.card .content h1{
+    margin: 0;
+}
+.card:hover .content {
+    top: 10px; 
+    height: 500px;
+    max-height: fit-content;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+  padding: 15px 30px;
+  font-size: small;
+  color: black;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 0, 102, 0);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    box-shadow: 0 10px 20px rgb(168, 234, 240);
+    transform: translateY(-3px);
+}
+
+
+.column-container {
+
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 85px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.column {
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.column p {
+    padding-left: 60px;
+    text-align: center;
+}
+
+.bi-chat-left-quote {
+    transform: scale(2);
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    padding-top: 4px;
+}
+
+.claro{
+    color: rgb(88, 87, 87);
+}
+
+.textoD{
+    padding-top: 90px;
+    font-size: 20px;
+}
+
+.textoDclaro{
+    color: gray;
+}
+
+.Sobre{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.textosobre{
+    font-size: 25px;
+}
+
+.card-container1{
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    width: 100%;
+    padding-right: 30px;
+    gap: 20px;
+}
+.carda{
+    width: 100%;
+    height: 310px;
+    padding: 20px;
+    text-align: center;
+}
+
+.carda p{
+    text-align: left;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.carda h2{
+    text-align: left;
+}
+
+.card-container2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    width: 100%;
+    padding-right: 30px;
+    gap: 20px;
+    padding-top: 50px;
+}
+.carda2{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.carda2 p{
+    text-align: left;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+
+.form-container p{
+    color: gray;
+}
+
+input {
+   padding: 12px;
+   margin-bottom: 10px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   text-align: start;
+   width: 350px;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 120px;
+    min-width: 350px;
+    gap: 2px;
+    padding-left: 8px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: black;
+}
+
+.botao{
+  width: 350px;
+  color: white;
+  padding: 7px 7px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #00008B;
+}
+
+.botao:hover {
+    background-color: #191970;
+}
+
+.bi-envelope-heart {
+    height: 50px;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(38, 37, 37);
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    padding-top: 15px;
+    color: #fff;
+}
